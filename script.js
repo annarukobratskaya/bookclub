@@ -7,7 +7,6 @@ document.querySelectorAll('.book-btn').forEach(button => {
         const bookDetails = getBookDetails(book);
         // Заполняем поля в разделе book-details
         document.getElementById('book-title').textContent = bookDetails.title;
-        document.getElementById('book-title-input').value = bookDetails.title; // Новое: Заполняем поле ввода названия книги
         document.getElementById('book-image').value = bookDetails.image;
         document.getElementById('book-author').value = bookDetails.author;
         document.getElementById('read-date').value = bookDetails.readDate;
@@ -22,7 +21,7 @@ document.querySelectorAll('.book-btn').forEach(button => {
 
 // Функция для сохранения изменений (в данном случае просто выводим значения в консоль)
 function saveChanges() {
-    const bookTitle = document.getElementById('book-title-input').value; // Изменено: Получаем значение из поля ввода названия книги
+    const bookTitle = document.getElementById('book-title').textContent;
     const bookImage = document.getElementById('book-image').value;
     const bookAuthor = document.getElementById('book-author').value;
     const readDate = document.getElementById('read-date').value;
