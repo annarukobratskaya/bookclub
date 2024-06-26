@@ -14,26 +14,36 @@ header {
     text-align: center;
 }
 
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-}
-
 main {
     max-width: 800px;
     width: 100%;
     padding: 20px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+#books {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
-li {
-    background-color: #e0e0e0;
-    margin: 10px 0;
-    padding: 10px;
+#book-details {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+#book-details.hidden {
+    display: none;
+}
+
+#book-details div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
 }
