@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжный клуб</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в наш Книжный клуб!</h1>
+    </header>
+    <main>
+        <section id="books">
+            <button class="book-btn" data-book="book1">Книга 1</button>
+            <button class="book-btn" data-book="book2">Книга 2</button>
+            <button class="book-btn" data-book="book3">Книга 3</button>
+			<button class="book-btn" data-book="book3">Книга 4</button>
+			<button class="book-btn" data-book="book3">Книга 5</button>
+			<button class="book-btn" data-book="book3">Книга 6</button>
+			<button class="book-btn" data-book="book3">Книга 7</button>
+			<button class="book-btn" data-book="book3">Книга 8</button>
+        </section>
+        <section id="book-details" class="hidden">
+            <h2 id="book-title">Название книги</h2>
+            <div>
+                <label for="book-image">Картинка:</label>
+                <input type="url" id="book-image" placeholder="URL картинки">
+            </div>
+            <div>
+                <label for="book-author">Автор:</label>
+                <input type="text" id="book-author" placeholder="Имя автора">
+            </div>
+            <div>
+                <label for="read-date">Дата прочтения:</label>
+                <input type="date" id="read-date">
+            </div>
+            <div>
+                <label for="quote-ani">Любимая цитата Ани:</label>
+                <textarea id="quote-ani" rows="3" placeholder="Цитата от Ани"></textarea>
+            </div>
+            <div>
+                <label for="quote-dasha">Любимая цитата Даши:</label>
+                <textarea id="quote-dasha" rows="3" placeholder="Цитата от Даши"></textarea>
+            </div>
+            <div>
+                <label for="checklist-link">Ссылка на чеклист:</label>
+                <input type="url" id="checklist-link" placeholder="URL чеклиста">
+            </div>
+            <button onclick="saveChanges()">Сохранить изменения</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
